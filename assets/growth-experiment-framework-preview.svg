@@ -1,88 +1,93 @@
-<svg width="1200" height="680" viewBox="0 0 1200 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
-      <path d="M1 1L9 5L1 9" fill="none" stroke="#667085" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1 1L11 6L1 11" fill="none" stroke="#667085" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </marker>
-    <marker id="arrow-feedback" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
-      <path d="M1 1L9 5L1 9" fill="none" stroke="#7A4E13" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <marker id="feedback-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1 1L11 6L1 11" fill="none" stroke="#8A5A12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </marker>
   </defs>
 
-  <rect width="1200" height="680" fill="#F6F7F9"/>
-  <rect x="48" y="38" width="1104" height="604" rx="20" fill="#FFFFFF" stroke="#D7DEE8"/>
+  <rect width="1600" height="900" fill="#F6F7F9"/>
+  <rect x="64" y="48" width="1472" height="804" rx="24" fill="#FFFFFF" stroke="#D7DEE8"/>
 
-  <text x="84" y="100" fill="#172033" font-family="Arial, sans-serif" font-size="34" font-weight="700">Growth Experiment Framework</text>
-  <text x="84" y="138" fill="#5A6475" font-family="Arial, sans-serif" font-size="18">新品 / 新业务增长实验拆解框架</text>
+  <text x="112" y="130" fill="#172033" font-family="Arial, sans-serif" font-size="46" font-weight="700">Growth Experiment Framework</text>
+  <text x="112" y="180" fill="#5A6475" font-family="Arial, sans-serif" font-size="24">新品 / 新业务增长实验拆解框架</text>
 
-  <rect x="84" y="168" width="1032" height="50" rx="8" fill="#F2F5F8" stroke="#E1E7EF"/>
-  <text x="110" y="200" fill="#334155" font-family="Arial, sans-serif" font-size="16" font-weight="700">核心逻辑：</text>
-  <text x="194" y="200" fill="#526071" font-family="Arial, sans-serif" font-size="16">问题定义 → 用户假设 → 路径拆解 → 实验设计 → 指标判断 → 复盘反馈，形成下一轮增长实验。</text>
+  <rect x="112" y="220" width="1376" height="68" rx="12" fill="#F2F5F8" stroke="#E1E7EF"/>
+  <text x="150" y="263" fill="#334155" font-family="Arial, sans-serif" font-size="22" font-weight="700">核心逻辑：</text>
+  <text x="260" y="263" fill="#526071" font-family="Arial, sans-serif" font-size="22">问题定义 → 用户假设 → 路径拆解 → 实验设计 → 指标判断 → 复盘反馈</text>
 
-  <g stroke="#667085" stroke-width="3" stroke-linecap="round">
-    <line x1="368" y1="320" x2="455" y2="320" marker-end="url(#arrow)"/>
-    <line x1="735" y1="320" x2="822" y2="320" marker-end="url(#arrow)"/>
-    <line x1="967" y1="376" x2="967" y2="414" marker-end="url(#arrow)"/>
-    <line x1="832" y1="508" x2="745" y2="508" marker-end="url(#arrow)"/>
-    <line x1="465" y1="508" x2="378" y2="508" marker-end="url(#arrow)"/>
+  <g stroke="#667085" stroke-width="5" stroke-linecap="round">
+    <line x1="492" y1="423" x2="588" y2="423" marker-end="url(#arrow)"/>
+    <line x1="1012" y1="423" x2="1108" y2="423" marker-end="url(#arrow)"/>
+    <line x1="1300" y1="505" x2="1300" y2="572" marker-end="url(#arrow)"/>
+    <line x1="1108" y1="665" x2="1012" y2="665" marker-end="url(#arrow)"/>
+    <line x1="588" y1="665" x2="492" y2="665" marker-end="url(#arrow)"/>
   </g>
 
-  <path d="M154 430V392C154 372 170 356 190 356H220" stroke="#7A4E13" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 8" marker-end="url(#arrow-feedback)"/>
-  <rect x="100" y="578" width="286" height="34" rx="17" fill="#FFF4E5" stroke="#FFD7A3"/>
-  <text x="126" y="600" fill="#7A4E13" font-family="Arial, sans-serif" font-size="15" font-weight="700">06 的复盘结论会回到 01，更新问题定义</text>
+  <path d="M302 592V550C302 520 326 496 356 496H410" stroke="#8A5A12" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10" marker-end="url(#feedback-arrow)"/>
 
   <g>
-    <rect x="98" y="264" width="270" height="112" rx="12" fill="#EAF3FF" stroke="#B9D7FF"/>
-    <rect x="98" y="264" width="270" height="8" rx="4" fill="#5B9CF6"/>
-    <circle cx="132" cy="306" r="20" fill="#FFFFFF" stroke="#B9D7FF"/>
-    <text x="120" y="313" fill="#173B67" font-family="Arial, sans-serif" font-size="18" font-weight="700">01</text>
-    <text x="166" y="303" fill="#173B67" font-family="Arial, sans-serif" font-size="20" font-weight="700">业务问题定义</text>
-    <text x="166" y="334" fill="#4A5A70" font-family="Arial, sans-serif" font-size="15">目标 / 不确定性 / 资源 / 成功标准</text>
-  </g>
-
-  <g>
-    <rect x="465" y="264" width="270" height="112" rx="12" fill="#EEF8F2" stroke="#BCE6CB"/>
-    <rect x="465" y="264" width="270" height="8" rx="4" fill="#41A66B"/>
-    <circle cx="499" cy="306" r="20" fill="#FFFFFF" stroke="#BCE6CB"/>
-    <text x="487" y="313" fill="#185A35" font-family="Arial, sans-serif" font-size="18" font-weight="700">02</text>
-    <text x="533" y="303" fill="#185A35" font-family="Arial, sans-serif" font-size="20" font-weight="700">用户与场景假设</text>
-    <text x="533" y="334" fill="#4A5A70" font-family="Arial, sans-serif" font-size="15">人群 / 痛点 / 触发场景 / 阻力</text>
+    <rect x="112" y="340" width="380" height="166" rx="16" fill="#EAF3FF" stroke="#B9D7FF" stroke-width="1.5"/>
+    <rect x="112" y="340" width="380" height="10" rx="5" fill="#5B9CF6"/>
+    <circle cx="164" cy="410" r="32" fill="#FFFFFF" stroke="#B9D7FF" stroke-width="1.5"/>
+    <text x="145" y="421" fill="#173B67" font-family="Arial, sans-serif" font-size="26" font-weight="700">01</text>
+    <text x="220" y="402" fill="#173B67" font-family="Arial, sans-serif" font-size="30" font-weight="700">业务问题定义</text>
+    <text x="220" y="444" fill="#4A5A70" font-family="Arial, sans-serif" font-size="21">目标 / 不确定性 / 资源</text>
+    <text x="220" y="476" fill="#4A5A70" font-family="Arial, sans-serif" font-size="21">成功与失败标准</text>
   </g>
 
   <g>
-    <rect x="832" y="264" width="270" height="112" rx="12" fill="#FFF4E5" stroke="#FFD7A3"/>
-    <rect x="832" y="264" width="270" height="8" rx="4" fill="#F59E2E"/>
-    <circle cx="866" cy="306" r="20" fill="#FFFFFF" stroke="#FFD7A3"/>
-    <text x="854" y="313" fill="#7A4700" font-family="Arial, sans-serif" font-size="18" font-weight="700">03</text>
-    <text x="900" y="303" fill="#7A4700" font-family="Arial, sans-serif" font-size="20" font-weight="700">增长路径拆解</text>
-    <text x="900" y="334" fill="#4A5A70" font-family="Arial, sans-serif" font-size="15">认知 / 兴趣 / 信任 / 转化</text>
+    <rect x="608" y="340" width="404" height="166" rx="16" fill="#EEF8F2" stroke="#BCE6CB" stroke-width="1.5"/>
+    <rect x="608" y="340" width="404" height="10" rx="5" fill="#41A66B"/>
+    <circle cx="660" cy="410" r="32" fill="#FFFFFF" stroke="#BCE6CB" stroke-width="1.5"/>
+    <text x="641" y="421" fill="#185A35" font-family="Arial, sans-serif" font-size="26" font-weight="700">02</text>
+    <text x="716" y="402" fill="#185A35" font-family="Arial, sans-serif" font-size="30" font-weight="700">用户与场景假设</text>
+    <text x="716" y="444" fill="#4A5A70" font-family="Arial, sans-serif" font-size="21">人群 / 痛点 / 触发场景</text>
+    <text x="716" y="476" fill="#4A5A70" font-family="Arial, sans-serif" font-size="21">购买动机与阻力</text>
   </g>
 
   <g>
-    <rect x="832" y="420" width="270" height="112" rx="12" fill="#F3EEFF" stroke="#D4C2FF"/>
-    <rect x="832" y="420" width="270" height="8" rx="4" fill="#8B6BE8"/>
-    <circle cx="866" cy="462" r="20" fill="#FFFFFF" stroke="#D4C2FF"/>
-    <text x="854" y="469" fill="#4E2E8C" font-family="Arial, sans-serif" font-size="18" font-weight="700">04</text>
-    <text x="900" y="459" fill="#4E2E8C" font-family="Arial, sans-serif" font-size="20" font-weight="700">实验设计与执行</text>
-    <text x="900" y="490" fill="#4A5A70" font-family="Arial, sans-serif" font-size="15">内容 / 渠道 / 落地页 / 权益</text>
+    <rect x="1108" y="340" width="380" height="166" rx="16" fill="#FFF4E5" stroke="#FFD7A3" stroke-width="1.5"/>
+    <rect x="1108" y="340" width="380" height="10" rx="5" fill="#F59E2E"/>
+    <circle cx="1160" cy="410" r="32" fill="#FFFFFF" stroke="#FFD7A3" stroke-width="1.5"/>
+    <text x="1141" y="421" fill="#7A4700" font-family="Arial, sans-serif" font-size="26" font-weight="700">03</text>
+    <text x="1216" y="402" fill="#7A4700" font-family="Arial, sans-serif" font-size="30" font-weight="700">增长路径拆解</text>
+    <text x="1216" y="444" fill="#4A5A70" font-family="Arial, sans-serif" font-size="21">认知 / 兴趣 / 信任</text>
+    <text x="1216" y="476" fill="#4A5A70" font-family="Arial, sans-serif" font-size="21">转化与承接</text>
   </g>
 
   <g>
-    <rect x="465" y="420" width="270" height="112" rx="12" fill="#E9F7F7" stroke="#B8E2E2"/>
-    <rect x="465" y="420" width="270" height="8" rx="4" fill="#34A3A3"/>
-    <circle cx="499" cy="462" r="20" fill="#FFFFFF" stroke="#B8E2E2"/>
-    <text x="487" y="469" fill="#185B5B" font-family="Arial, sans-serif" font-size="18" font-weight="700">05</text>
-    <text x="533" y="459" fill="#185B5B" font-family="Arial, sans-serif" font-size="20" font-weight="700">指标与判断标准</text>
-    <text x="533" y="490" fill="#4A5A70" font-family="Arial, sans-serif" font-size="15">CTR / CVR / CPA / ROAS / GMV</text>
+    <rect x="1108" y="582" width="380" height="166" rx="16" fill="#F3EEFF" stroke="#D4C2FF" stroke-width="1.5"/>
+    <rect x="1108" y="582" width="380" height="10" rx="5" fill="#8B6BE8"/>
+    <circle cx="1160" cy="652" r="32" fill="#FFFFFF" stroke="#D4C2FF" stroke-width="1.5"/>
+    <text x="1141" y="663" fill="#4E2E8C" font-family="Arial, sans-serif" font-size="26" font-weight="700">04</text>
+    <text x="1216" y="644" fill="#4E2E8C" font-family="Arial, sans-serif" font-size="30" font-weight="700">实验设计与执行</text>
+    <text x="1216" y="686" fill="#4A5A70" font-family="Arial, sans-serif" font-size="21">内容 / 渠道 / 落地页</text>
+    <text x="1216" y="718" fill="#4A5A70" font-family="Arial, sans-serif" font-size="21">权益与转化测试</text>
   </g>
 
   <g>
-    <rect x="98" y="420" width="270" height="112" rx="12" fill="#FCEEEE" stroke="#F5C2C2"/>
-    <rect x="98" y="420" width="270" height="8" rx="4" fill="#E35C5C"/>
-    <circle cx="132" cy="462" r="20" fill="#FFFFFF" stroke="#F5C2C2"/>
-    <text x="120" y="469" fill="#7A2525" font-family="Arial, sans-serif" font-size="18" font-weight="700">06</text>
-    <text x="166" y="459" fill="#7A2525" font-family="Arial, sans-serif" font-size="20" font-weight="700">复盘与下一步</text>
-    <text x="166" y="490" fill="#4A5A70" font-family="Arial, sans-serif" font-size="15">放大 / 复测 / 优化 / 暂停</text>
+    <rect x="608" y="582" width="404" height="166" rx="16" fill="#E9F7F7" stroke="#B8E2E2" stroke-width="1.5"/>
+    <rect x="608" y="582" width="404" height="10" rx="5" fill="#34A3A3"/>
+    <circle cx="660" cy="652" r="32" fill="#FFFFFF" stroke="#B8E2E2" stroke-width="1.5"/>
+    <text x="641" y="663" fill="#185B5B" font-family="Arial, sans-serif" font-size="26" font-weight="700">05</text>
+    <text x="716" y="644" fill="#185B5B" font-family="Arial, sans-serif" font-size="30" font-weight="700">指标与判断标准</text>
+    <text x="716" y="686" fill="#4A5A70" font-family="Arial, sans-serif" font-size="21">CTR / CVR / CPA / ROAS</text>
+    <text x="716" y="718" fill="#4A5A70" font-family="Arial, sans-serif" font-size="21">GMV / 毛利 / 回本周期</text>
   </g>
 
-  <text x="84" y="626" fill="#5A6475" font-family="Arial, sans-serif" font-size="16">把增长动作从“凭经验试错”拆成“业务问题 - 用户假设 - 路径拆解 - 实验设计 - 指标判断 - 复盘反馈”的闭环流程</text>
+  <g>
+    <rect x="112" y="582" width="380" height="166" rx="16" fill="#FCEEEE" stroke="#F5C2C2" stroke-width="1.5"/>
+    <rect x="112" y="582" width="380" height="10" rx="5" fill="#E35C5C"/>
+    <circle cx="164" cy="652" r="32" fill="#FFFFFF" stroke="#F5C2C2" stroke-width="1.5"/>
+    <text x="145" y="663" fill="#7A2525" font-family="Arial, sans-serif" font-size="26" font-weight="700">06</text>
+    <text x="220" y="644" fill="#7A2525" font-family="Arial, sans-serif" font-size="30" font-weight="700">复盘与下一步</text>
+    <text x="220" y="686" fill="#4A5A70" font-family="Arial, sans-serif" font-size="21">放大 / 复测 / 优化</text>
+    <text x="220" y="718" fill="#4A5A70" font-family="Arial, sans-serif" font-size="21">暂停或补充数据</text>
+  </g>
+
+  <rect x="472" y="790" width="656" height="40" rx="20" fill="#FFF4E5" stroke="#FFD7A3"/>
+  <text x="536" y="817" fill="#8A5A12" font-family="Arial, sans-serif" font-size="19" font-weight="700">复盘结论会回到问题定义，更新下一轮实验假设和动作优先级</text>
 </svg>
