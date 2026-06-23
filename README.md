@@ -4,7 +4,7 @@
 
 它适用于新品冷启动、内容增长、用户增长、营销活动、平台运营和新业务验证等场景。
 
-![增长实验框架预览](./assets/growth-experiment-framework-preview.svg)
+![增长实验框架预览](./assets/growth-experiment-framework-preview.png)
 
 ## 项目背景
 
@@ -55,7 +55,7 @@
 ├── scripts/
 │   └── validate_experiment_plan.py
 ├── assets/
-│   └── growth-experiment-framework-preview.svg
+│   └── growth-experiment-framework-preview.png
 └── LICENSE
 ```
 
