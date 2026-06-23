@@ -29,7 +29,7 @@ def is_blank(value: str | None) -> bool:
 
 
 def validate_file(input_path: Path, invalid_rows_path: Path) -> int:
-    invalid_rows: list[dict[str, str]] = []
+    rows: list[tuple[int, dict[str, str]]] = []
 
     with input_path.open("r", newline="", encoding="utf-8-sig") as input_file:
         reader = csv.DictReader(input_file)
@@ -45,11 +45,34 @@ def validate_file(input_path: Path, invalid_rows_path: Path) -> int:
             output_fields.append("错误信息")
 
         for row_number, row in enumerate(reader, start=2):
-            missing_fields = [field for field in REQUIRED_FIELDS if is_blank(row.get(field))]
-            if missing_fields:
-                output_row = dict(row)
-                output_row["错误信息"] = f"第 {row_number} 行缺少字段：" + "，".join(missing_fields)
-                invalid_rows.append(output_row)
+            rows.append((row_number, row))
+
+    experiment_id_counts: dict[str, int] = {}
+    for _, row in rows:
+        experiment_id = (row.get("实验编号") or "").strip()
+        if experiment_id:
+            experiment_id_counts[experiment_id] = experiment_id_counts.get(experiment_id, 0) + 1
+
+    invalid_rows: list[dict[str, str]] = []
+    for row_number, row in rows:
+        errors: list[str] = []
+        missing_fields = [field for field in REQUIRED_FIELDS if is_blank(row.get(field))]
+        if missing_fields:
+            errors.append("缺少字段：" + "，".join(missing_fields))
+
+        experiment_id = (row.get("实验编号") or "").strip()
+        if experiment_id and experiment_id_counts[experiment_id] > 1:
+            errors.append(f"实验编号重复：{experiment_id}")
+
+        if errors:
+            output_row = dict(row)
+            output_row["错误信息"] = f"第 {row_number} 行" + "；".join(errors)
+            invalid_rows.append(output_row)
+
+    if not invalid_rows:
+        if invalid_rows_path.exists():
+            invalid_rows_path.unlink()
+        return 0
 
     invalid_rows_path.parent.mkdir(parents=True, exist_ok=True)
     with invalid_rows_path.open("w", newline="", encoding="utf-8") as output_file:
@@ -82,7 +105,7 @@ def main() -> int:
         print(f"Found {invalid_count} invalid rows. Details written to {invalid_rows_path}")
         return 1
 
-    print(f"Validation passed. Empty invalid rows file written to {invalid_rows_path}")
+    print("Validation passed. No invalid rows found.")
     return 0
 
 

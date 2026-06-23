@@ -101,8 +101,10 @@ python3 scripts/validate_experiment_plan.py examples/example_experiment_plan.csv
 脚本会输出：
 
 - 缺失字段所在行
+- 重复的实验编号
 - 每行缺失了哪些关键字段
-- 可用于后续补充的 `invalid_rows.csv`
+- 如果有错误，会生成可用于后续补充的 `invalid_rows.csv`
+- 如果没有错误，不会生成错误行文件
 
 ## 01 业务问题定义
 
